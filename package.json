@@ -1,6 +1,6 @@
 {
   "name": "convert-html-grid",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Convert html table to grid layout",
   "main": "dist/convert-grid.js",
   "scripts": {

@@ -1,4 +1,4 @@
-export const convertTableToGrid = (htmlStr) => {
+ const convertTableToGrid = (htmlStr) => {
   // Convert html template to html
   const richTextTemplate = document.createElement('div');
   richTextTemplate.classList.add('richText');
@@ -21,3 +21,5 @@ export const convertTableToGrid = (htmlStr) => {
   }
   return richTextTemplate.outerHTML;
 };
+
+export default convertTableToGrid;

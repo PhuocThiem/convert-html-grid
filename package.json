@@ -2,7 +2,7 @@
   "name": "convert-html-grid",
   "version": "1.0.0",
   "description": "Convert html table to grid layout",
-  "main": "index.js",
+  "main": "dist/convert-grid.js",
   "scripts": {
     "dev": "node src/index.js",
     "build": "webpack --config webpack.config.js"

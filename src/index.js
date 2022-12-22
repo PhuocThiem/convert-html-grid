@@ -1,10 +1,10 @@
-export const convertTableToGrid = (htmlStr) => {
+const convertTableToGrid = (htmlStr) => {
   // Convert html template to html
   const richTextTemplate = document.createElement('div');
   richTextTemplate.classList.add('richText');
   const htmlRemovedEmpty = htmlStr.replace(/<p><\/p>/gi, '');
   richTextTemplate.innerHTML = htmlRemovedEmpty;
-  const table = richTextTemplate.getElementsByTagName('table')
+  const table = richTextTemplate.getElementsByTagName('table');
   for (const item of table) {
     if (!item.getElementsByTagName('th').length) {
       const colCounter = item.getElementsByTagName('td').length;
@@ -19,5 +19,7 @@ export const convertTableToGrid = (htmlStr) => {
       item?.parentNode?.replaceChild(div, item);
     }
   }
-  return richTextTemplate.outerHTML
-}
+  return richTextTemplate.outerHTML;
+};
+
+export { convertTableToGrid };
